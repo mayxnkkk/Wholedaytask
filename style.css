@@ -1,0 +1,174 @@
+:root {
+    --primary: #f3f6f9;
+    --accent: #00aaff;
+    --light-bg: #f5f7fa;
+    --text-color: #060606;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light-bg);
+    color: var(--text-color);
+    
+    background-image: url('https://media.istockphoto.com/id/1401295466/vector/halftone-spotted-background.jpg?s=612x612&w=0&k=20&c=ql7PRJ1ffHk-Zkj4cDeePpLzmqAPzgIVtfBkCsoqK2Q=');
+  background-size: cover;         /* scale image to cover the entire background */
+  background-position: center;    /* center the image */
+  background-repeat: no-repeat;
+ 
+}
+
+
+
+
+header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);  /* Transparent white */
+  backdrop-filter: blur(10px);          /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* For Safari */
+  z-index: 1000;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255);
+  padding: 10px;
+  
+  
+   
+}
+
+.P{
+    font-family: sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.shimmer{
+    height: 40%;
+    width: 20px;
+    background: #060606;
+    margin-top: 20px;
+    color: #eff2f5;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+marquee{
+    background-color: #060606;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 2px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+
+    width: 100%;
+  height: 100%;
+  --color: #e7e7e7;
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+  }
+    
+
+
+.overview {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.overview h2 {
+    color: var(--primary);
+}
+
+.form-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.form-section h3 {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+label {
+    flex: 1 1 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thank-you {
+    display: none;
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.testimonials {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+}
